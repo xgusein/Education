@@ -4,6 +4,14 @@ import './App.css';
 import User from './Components/User';
 
 class App extends Component {
+
+  
+
+  deleteUser(id) {
+    this.setState({
+      users : this.state.users.filter(user => id !== user.id )
+    })
+  }
   render() {
     return (
       <div className='container'>

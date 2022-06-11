@@ -6,6 +6,17 @@ class User extends Component {
   state = {
     isVisible : false
   }
+  static defaultProps = {
+    name : "No information",
+    salary : "No information",
+    department : "No information"
+  }
+  
+  onClickEvent = (e) =>{
+    this.setState({
+      isVisible : !this.state.isVisible
+    })
+  }
 
   // constructor(props) {
   //   super(props);
@@ -23,7 +34,7 @@ class User extends Component {
         <div className="col-md-8 mb-4">
           <div className="card">
             <div className="card-header d-flex justify-content-between">
-              <h4 className='d-inline'>{name}</h4>
+              <h4 className='d-inline' onClick={this.onClickEvent}>{name}</h4>
               <i class="fas fa-trash-alt" style={{cursor: "pointer"}}></i>
             </div>
 
@@ -42,12 +53,6 @@ class User extends Component {
       </div>
     )
   }
-}
-
-User.defaultProps = {
-  name : "No information",
-  salary : "No information",
-  department : "No information"
 }
 
 User.propTypes = {
