@@ -18,6 +18,11 @@ class User extends Component {
     })
   }
 
+  onDeleteUser = (e) => {
+    const {id} = this.props;
+    // Consumer Dispatch
+  }
+
   // constructor(props) {
   //   super(props);
 

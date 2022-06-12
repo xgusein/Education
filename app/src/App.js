@@ -5,26 +5,12 @@ import User from './Components/User';
 
 class App extends Component {
 
-  
-
-  deleteUser(id) {
-    this.setState({
-      users : this.state.users.filter(user => id !== user.id )
-    })
-  }
   render() {
+
     return (
       <div className='container'>
         <Navbar title = "User App"/>
         <hr/>
-        <User
-        name = "Huseyn Ibadzade"
-        salary = "5000"
-        department = "Computer" />
-        <User
-        name = "Zamin Ibadzade"
-        salary = "9000"
-        department = "Chemistrh" />
       </div>
     )
   }
