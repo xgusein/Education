@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import UserConsumer from "../context";
 import posed from 'react-pose';
-var uniqid = require('uniqid');
+import axios from 'axios';
+import { BrowserRouter as Router, Route} from "react-router-dom";
 const Animation = posed.div({
     visible : {
         opacity: 1,
@@ -36,17 +37,17 @@ const Animation = posed.div({
       [e.target.name] : e.target.value
     })
   }
-  addUser = (dispatch,e) => {
+  addUser = async (dispatch,e) => {
   e.preventDefault();
   const { name,department,salary } = this.state;
 
   const newUser = {
-    id : uniqid(),
     name:name,
     salary:salary,
     department:department
   }
-  dispatch({type : "ADD_USER",payload: newUser});
+  const response =  await axios.post("http://localhost:3004/users",newUser);
+  dispatch({type : "ADD_USER",payload:response.data});
 }
   // changeName = (e) => {
   //   this.setState({

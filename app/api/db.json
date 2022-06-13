@@ -1,0 +1,18 @@
+{
+    "users" : [
+        
+            {   
+                "id": 2,
+                "name" : "Zamin Ibadzade",
+                "salary" : "9000",
+                "department" : "Chemistrh"
+            },
+            {
+                "id": 1,
+                "name" : "Huseyn Ibadzade",
+                "salary" : "5000",
+                "department" : "Computer"
+            }
+        
+    ]
+}
