@@ -43,7 +43,7 @@ class User extends Component {
             return (
               <div>
                 <div className="col-md-8 mb-4">
-                  <div className="card">
+                  <div className="card" style={isVisible ? {backgroundColor : "#014B58", color : "white"} : null}>
                     <div className="card-header d-flex justify-content-between">
                       <h4 className='d-inline' onClick={this.onClickEvent}>{name}</h4>
                       <i class="fas fa-trash-alt" onClick={this.onDeleteUser.bind(this,dispatch)} style={{cursor: "pointer"}}></i>
