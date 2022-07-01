@@ -5,3 +5,6 @@
     width: 50rem;
     max-width: 95%;
   }
+  html {
+    background-color: rgb(78, 76, 76);
+  }
