@@ -8,8 +8,8 @@ const Navbar = () => {
         {/* 1st logo part  */}
         <div className="logo">
           <h2>
-            <span>T</span>hapa
-            <span>T</span>echnical
+            <span>A</span>rchery
+            <span>A</span>Z
           </h2>
         </div>
 
