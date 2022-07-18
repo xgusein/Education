@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar/Navbar';
 import MainHeader from './components/Header/Header';
 // import bgImage from './video/background-img.mp4';
+import About from './components/About/About';
 import './App.css';
 
 function App() {
