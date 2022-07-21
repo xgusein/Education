@@ -1,0 +1,43 @@
+/* .container {
+    margin-top: 20px;
+    position: absolute;
+} */
+.Container {
+    margin-top: 20px;
+    position: absolute;
+    margin-left: 10rem;
+    padding-bottom: 5rem;
+}
+h1 {
+    width: 100%;
+    font-size: 3.5rem;
+    padding-bottom: 6rem;
+}
+
+.font {
+    font-weight: 700;
+}
+
+p {
+    padding-top: 9rem;
+    margin-right: 0.1rem;
+    font-size: 1.97rem;
+}
+
+img {
+    padding-left: 1.5rem;
+    width: 100%;
+    background-attachment: fixed;
+    border-radius: 50%;
+    height: 53rem;
+    object-fit: cover;
+}
+
+.BUTTON {
+    width: 20rem;
+    font-size: 2rem;
+    padding: 1.1rem;
+    border-radius: 50rem;
+    margin-top: 6rem;
+    margin-right: 35rem;
+}

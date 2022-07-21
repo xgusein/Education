@@ -1,6 +1,5 @@
 import React from 'react';
 import bgImage from './video/background-img.mp4';
-import About from '../About/About';
 import classes from './Header.css';
 
 

@@ -40,5 +40,9 @@
 .hero-section {
   position: absolute;
   z-index: 1;
-  transform: translate(65%,5%);
+  transform: translate(73%,5%);
+}
+
+img {
+  width: 100%;
 }
