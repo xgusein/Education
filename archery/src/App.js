@@ -4,8 +4,11 @@ import Navbar from './components/Navbar/Navbar';
 import MainHeader from './components/Header/Header';
 // import bgImage from './video/background-img.mp4';
 import About from './components/About/About';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 import './App.css';
-import Gallery from './components/Gallery/Gallery';
+import Slider from 'react-slick';
+// import Gallery from './components/Gallery/Gallery';
 
 function App() {
   return (
@@ -17,7 +20,9 @@ function App() {
       </section>
       <MainHeader/>
       <About />
-      <Gallery />
+      <Slider>
+        
+      </Slider>
     </div>
   );
 }
