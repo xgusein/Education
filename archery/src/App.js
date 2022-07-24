@@ -7,7 +7,8 @@ import About from './components/About/About';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import './App.css';
-import Slider from 'react-slick';
+// import Slider from 'react-slick';
+import Slider from './components/Gallery/Gallery';
 // import Gallery from './components/Gallery/Gallery';
 
 function App() {
@@ -20,9 +21,7 @@ function App() {
       </section>
       <MainHeader/>
       <About />
-      <Slider>
-        
-      </Slider>
+      <Slider className="gallery"/>
     </div>
   );
 }

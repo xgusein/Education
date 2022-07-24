@@ -1,0 +1,16 @@
+.gallery {
+    margin-top: 70rem;
+}  
+
+.gallery_img img {
+    width: 90%;
+    height: 43rem;
+    margin-left: 2.5rem;
+    /* margin-top: 0.2rem; */
+    padding-bottom: 1rem;
+    border-radius: 5%;
+}
+/* 
+.gallery_head {
+
+} */
