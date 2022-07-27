@@ -15,7 +15,8 @@ export default class MultipleItems extends Component {
     return (
       <div className="gallery">
         <h1 className="gallery_head">  Gallery </h1>
-        <Slider {...settings}>
+        <h1 className="background_word">Instagram</h1>
+        <Slider className="Slider" {...settings}>
           <div className="gallery_img">
             <img src={img} alt="" />
           </div>
