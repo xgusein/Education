@@ -14,7 +14,7 @@ export default class MultipleItems extends Component {
     };
     return (
       <div className="gallery">
-        <h1 className="gallery_head">  Gallery </h1>
+        <h1 className="gallery_head"> Our <span>Gallery</span> </h1>
         <h1 className="background_word">Instagram</h1>
         <Slider className="Slider" {...settings}>
           <div className="gallery_img">
