@@ -1,37 +1,58 @@
-import React from "react";
+import React, { useState } from "react";
 import './Navbar.css';
 
 const Navbar = () => {
-    return (
+  const [active, setActive] = useState("nav__menu");
+  const [icon, setIcon] = useState("nav__toggler");
+  const navToggle = () => {
+    if (active === "nav__menu") {
+      setActive("nav__menu nav__active");
+    } else setActive("nav__menu");
 
-        <nav className="main-nav">
-        {/* 1st logo part  */}
-        <div className="logo">
-          <h2>
-            <span>X</span>gusein
-          </h2>
-        </div>
-
-        {/* 2nd menu part  */}
-        <div className="menu-link">
-          <ul>
-            <li>
-              <a>Home</a>
-            </li>
-            <li>
-              <a>about</a>
-            </li>
-            <li>
-              <a href="">Services</a>
-            </li>
-            <li>
-              <a href="">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-    );
+    // Icon Toggler
+    if (icon === "nav__toggler") {
+      setIcon("nav__toggler toggle");
+    } else setIcon("nav__toggler");
+  };
+  return (
+    <nav className="nav">
+      <a href="#" className="nav__brand">
+        Xgusein
+      </a>
+      <ul className={active}>
+        <li className="nav__item">
+          <a href="#" className="nav__link">
+            Home
+          </a>
+        </li>
+        <li className="nav__item">
+          <a href="#" className="nav__link">
+            About
+          </a>
+        </li>
+        <li className="nav__item">
+          <a href="#" className="nav__link">
+            Portfolio
+          </a>
+        </li>
+        <li className="nav__item">
+          <a href="#" className="nav__link">
+            Skills
+          </a>
+        </li>
+        <li className="nav__item">
+          <a href="#" className="nav__link">
+            Contact
+          </a>
+        </li>
+      </ul>
+      <div onClick={navToggle} className={icon}>
+        <div className="line1"></div>
+        <div className="line2"></div>
+        <div className="line3"></div>
+      </div>
+    </nav>
+  );
   };
   
 export default Navbar;
