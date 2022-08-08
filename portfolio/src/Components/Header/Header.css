@@ -19,7 +19,7 @@ html {
     font-family: monospace;
     color: white;
     z-index: 1;
-    transform: translate(50%,-300%);
+    transform: translate(65%,-300%);
     position: absolute;
     font-size: 3.5rem;
 }

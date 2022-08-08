@@ -12,6 +12,8 @@ body {
 }
 li {
   list-style: none;
+  letter-spacing: 0.5px;
+  position: relative;
 }
 a {
   text-decoration: none;
@@ -35,6 +37,7 @@ a {
 .nav__link{
   letter-spacing: 0.5px;
 }
+
 
 /* .nav__item::after{
   content: "";
@@ -96,4 +99,19 @@ a {
 }
 .toggle .line3 {
   transform: rotate(45deg) translate(-4px, -5px);
+}
+
+li::after {
+  content: '';
+  position: absolute;
+  background-color: #ff3c78;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -8px;
+  transition: all 0.5s ease;
+}
+
+li:hover::after{
+  width: 100%;
 }
