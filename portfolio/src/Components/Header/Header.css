@@ -39,3 +39,19 @@ html {
 span {
     font-weight: 700;
 }
+
+@media screen and (max-width: 480px) {
+    .video {
+        width: 100%;
+    }
+    .video img {
+        width: 100%;
+    }
+    .text {
+        font-size: 2.15rem;
+        margin-top: -200px;
+        margin-left:-275px;
+        z-index: 0;
+        
+    }
+}
