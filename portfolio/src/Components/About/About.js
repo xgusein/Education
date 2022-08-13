@@ -1,6 +1,8 @@
 import React from 'react';
 import aboutimg from './About_img/photo_2022-08-08_22-29-40.jpg';
-import {Container,Col,Row} from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import './About.css'
 
 
