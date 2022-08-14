@@ -1,5 +1,56 @@
-/* 
-img {
-    
-    
+/* .container {
+    margin-top: 20px;
+    position: absolute;
 } */
+.Container {
+    margin-top: 20px;
+    position: absolute;
+    margin-left: 10rem;
+    padding-bottom: 5rem;
+}
+h1 {
+    width: 100%;
+    font-size: 3.5rem;
+    padding-bottom: 6rem;
+}
+
+.font {
+    font-weight: 700;
+}
+
+.About_text {
+    padding-top: 2rem;
+    text-align: left;
+    /* margin-right: 0.1rem; */
+    font-size: 1.5rem;
+}
+
+.About_heading {
+    text-align: left;
+    margin-left: 2.5rem;
+    font-weight: 700;
+    font-size: large;
+}
+
+.about_inf {
+    margin-left: 1.8rem;
+    margin-top: -2rem;
+}
+
+.img {
+    padding-left: 1.5rem;
+    width: 100%;
+    background-attachment: fixed;
+    border-radius: 20%;
+    height: 53rem;
+    object-fit: cover;
+}
+
+.BUTTON {
+    width: 25rem;
+    font-size: 2rem;
+    padding: 1.1rem;
+    border-radius: 10rem;
+    margin-top: 5rem;
+    margin-right: 40rem;
+}

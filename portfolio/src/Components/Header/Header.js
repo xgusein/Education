@@ -10,7 +10,7 @@ const MainHeader = (props) => {
         <img src={img} alt="" />
         <div className="text">
             <h2><span className='text_intro'>Hi I'm</span> Huseyn Ibadzade</h2>
-            <p><span>I'm {''}</span> <Typical className='head_first'
+            <p className='p'><span>I'm {''}</span> <Typical className='head_first'
                 loop={Infinity}
                 wrapper="b"
                 steps={[

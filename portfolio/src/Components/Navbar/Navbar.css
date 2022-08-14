@@ -32,6 +32,9 @@ a {
 }
 .nav__brand {
   text-transform: uppercase;
+  color: rgb(204, 204, 204);
+  text-decoration: none;
+  font-size: 2rem;
 }
 
 .nav__link{

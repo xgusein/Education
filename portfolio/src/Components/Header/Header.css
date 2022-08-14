@@ -2,8 +2,9 @@ html {
     font-size: 62.5%;
 }
 .video {
+    background-attachment: fixed;
     width: 100%;
-    height: 72rem;
+    height: 68rem;
     
 }
 
@@ -19,13 +20,19 @@ html {
     font-family: monospace;
     color: white;
     z-index: 1;
-    transform: translate(65%,-300%);
+    transform: translate(210%,-290%);
     position: absolute;
-    font-size: 3.5rem;
+    font-size: 5.5rem;
+}
+
+.p {
+    font-size: 4rem;
+    margin-top: 2rem;
 }
 
 .text_intro {
     color: #ff305b;
+    font-size: 4.1rem;
 }
 
 .typical_text {
@@ -92,5 +99,3 @@ span {
         
     }
 }
-
-
