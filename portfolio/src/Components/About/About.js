@@ -2,9 +2,13 @@ import React from "react";
 import aboutimg from './About_img/photo_2022-08-08_22-29-40.jpg';
 import { Container, Row , Col ,Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './About.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useState } from 'react';
+import { faCalendar,faFacebook, faTwitter,faGithub,faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import './About.css';
 
 const About = (props) => {
+
     return (
         <Container className="Container">
             <Row>
@@ -26,29 +30,58 @@ const About = (props) => {
                     <div className="contact_inf">
                         <table>
                             <tbody>
-                                <tr>
-                                    <td>BRITHDAY</td>
+                                <tr className="">
+                                    <td style={{fontWeight:"700"}}><FontAwesomeIcon icon="fa-solid fa-calendar" /> BRITHDAY</td>
+                                    <td>:</td>
                                     <td>23/08/2002</td>
                                 </tr>
-                                <tr>
-                                    <td>PHONE</td>
+                                <tr className="">
+                                    <td style={{fontWeight:"700"}}>PHONE</td>
+                                    <td>:</td>
                                     <td>(+90)5346306095</td>
                                 </tr>
-                                <tr>
-                                    <td>EMAIL</td>
+                                <tr className="">
+                                    <td style={{fontWeight:"700"}}>EMAIL</td>
+                                    <td>:</td>
                                     <td>ibadzadehuseyn@gmail.com</td>
                                 </tr>
-                                <tr>
-                                    <td>WEBSITE</td>
+                                <tr className="">
+                                    <td style={{fontWeight:"700"}}>WEBSITE</td>
+                                    <td>:</td>
                                     <td>........</td>
                                 </tr>
                             </tbody>
                         </table>
                         <div className="social_media">
-                            
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <a href="">
+                                                <FontAwesomeIcon icon ={faFacebook} />
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="">
+                                            <FontAwesomeIcon icon ={faTwitter} />
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="">
+                                            <FontAwesomeIcon icon ={faLinkedinIn} />
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="">
+                                            <FontAwesomeIcon icon ={faGithub} />
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-                    <Button className="BUTTON">DOWNLOAD RESUME</Button>
+                    <a href="Huseyn Ibadzade-CV (1).pdf" download="Huseyn Ibadzade-CV (1).pdf"><Button className="BUTTON">DOWNLOAD RESUME</Button></a>
                     </div>
                 </Col>
             </Row>
