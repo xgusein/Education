@@ -2,7 +2,10 @@ import React, {useState, useEffect} from 'react';
 import Navbar from './Components/Navbar/Navbar';
 import MainHeader from './Components/Header/Header';
 import About from './Components/About/About';
+import Experiance from './Components/Experiance/Experiance';
+import Contact from './Components/Contact/Contact';
 import HashLoader from "react-spinners/HashLoader";
+
 import './App.css';
 
 
@@ -27,6 +30,9 @@ function App() {
             <Navbar />
             <MainHeader />
             <About />
+            <Experiance/>
+            <Contact />
+
         </div>
         )
       }

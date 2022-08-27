@@ -11,7 +11,7 @@ const About = (props) => {
 
     return (
         <Container className="Container">
-            <Row>
+            <Row className="aa">
                 <h1 className="head">About <span className="font">Me</span></h1>
                 <Col>
                     <img className="img" src={aboutimg} alt="" />
@@ -57,22 +57,22 @@ const About = (props) => {
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <a href="">
+                                            <a href="https://www.facebook.com/huseyn.ibadov.94/">
                                                 <FontAwesomeIcon icon ={faFacebook} />
                                             </a>
                                         </td>
                                         <td>
-                                            <a href="">
+                                            <a href="https://twitter.com/xgusein">
                                             <FontAwesomeIcon icon ={faTwitter} />
                                             </a>
                                         </td>
                                         <td>
-                                            <a href="">
+                                            <a href="https://www.linkedin.com/in/huseyn-ibadzade-8a9740227/">
                                             <FontAwesomeIcon icon ={faLinkedinIn} />
                                             </a>
                                         </td>
                                         <td>
-                                            <a href="">
+                                            <a href="https://github.com/xgusein">
                                             <FontAwesomeIcon icon ={faGithub} />
                                             </a>
                                         </td>
