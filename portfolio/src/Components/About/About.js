@@ -3,6 +3,9 @@ import aboutimg from './About_img/photo_2022-08-08_22-29-40.jpg';
 import { Container, Row , Col ,Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {BsFillTelephoneFill,BsCalendarWeek} from 'react-icons/bs'
+import {MdEmail} from 'react-icons/md';
+import {RiEarthFill} from 'react-icons/ri';
 import { useState } from 'react';
 import { faCalendar,faFacebook, faTwitter,faGithub,faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import './About.css';
@@ -31,22 +34,22 @@ const About = (props) => {
                         <table>
                             <tbody>
                                 <tr className="">
-                                    <td style={{fontWeight:"700"}}><FontAwesomeIcon icon="fa-solid fa-calendar" /> BRITHDAY</td>
+                                    <td style={{fontWeight:"700"}}><BsCalendarWeek className="ico" />BRITHDAY</td>
                                     <td>:</td>
                                     <td>23/08/2002</td>
                                 </tr>
                                 <tr className="">
-                                    <td style={{fontWeight:"700"}}>PHONE</td>
+                                    <td style={{fontWeight:"700"}}><BsFillTelephoneFill className="ico" />PHONE</td>
                                     <td>:</td>
                                     <td>(+90)5346306095</td>
                                 </tr>
                                 <tr className="">
-                                    <td style={{fontWeight:"700"}}>EMAIL</td>
+                                    <td style={{fontWeight:"700"}}><MdEmail className="ico" />EMAIL</td>
                                     <td>:</td>
                                     <td>ibadzadehuseyn@gmail.com</td>
                                 </tr>
                                 <tr className="">
-                                    <td style={{fontWeight:"700"}}>WEBSITE</td>
+                                    <td style={{fontWeight:"700"}}><RiEarthFill className="ico" />WEBSITE</td>
                                     <td>:</td>
                                     <td>........</td>
                                 </tr>

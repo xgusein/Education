@@ -48,7 +48,7 @@ h1 {
 }
 
 table {
-    width: 60%;
+    width: 62%;
 }
 
 td {
@@ -57,6 +57,10 @@ td {
 
 tr {
     margin-bottom: 3rem;
+}
+
+.ico {
+    margin-right: 1rem;
 }
 
 .social_media {

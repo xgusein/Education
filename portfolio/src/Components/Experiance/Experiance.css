@@ -1,3 +1,55 @@
 #experiance {
     margin-top: 87rem;
 }
+
+#experiance h2 {
+    margin-bottom: 2rem;
+}
+
+.experience__container {
+    text-align: left;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.experience__container > div {
+    background-color: black;
+    padding: 2.4rem 5rem;
+    width: 100%;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    color: white;
+    margin-top: 4rem;
+    transition: 0.5s;
+}
+
+.experience__container > div:hover {
+    background: #FF3C78;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+    margin-top: -5px;
+}
+
+.experience__container  > h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.experience__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+}
+
+.experience__details {
+    display: flex;
+    gap: 1rem;
+}
+
+.experience__details-icon {
+    margin-top: 0.8rem;
+    font-size: medium;
+    color: var(--color-primary);
+}
+
