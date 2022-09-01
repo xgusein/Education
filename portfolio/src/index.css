@@ -19,4 +19,9 @@ code {
   --color-primary-variant: rgba(77, 281, 255, 0.4);
   --colorwhite:#fff;
   --color-light: rgba(255, 255, 255, 0.6);
+
+  --container-witdh-lg:75%;
+  --container-witdh-md:86%;
+  --container-witdh-sm:90%;
+
 }
