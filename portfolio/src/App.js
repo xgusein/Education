@@ -3,6 +3,7 @@ import Navbar from './Components/Navbar/Navbar';
 import MainHeader from './Components/Header/Header';
 import About from './Components/About/About';
 import Experiance from './Components/Experiance/Experiance';
+import Works from './Components/Works/Works';
 import Contact from './Components/Contact/Contact';
 import HashLoader from "react-spinners/HashLoader";
 
@@ -31,6 +32,7 @@ function App() {
             <MainHeader />
             <About />
             <Experiance/>
+            <Works/>
             <Contact />
 
         </div>
