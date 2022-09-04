@@ -20,8 +20,14 @@ code {
   --colorwhite:#fff;
   --color-light: rgba(255, 255, 255, 0.6);
 
+  --transition: all 400ms ease;
+
   --container-witdh-lg:75%;
   --container-witdh-md:86%;
   --container-witdh-sm:90%;
 
+}
+
+html {
+  scroll-behavior: smooth;
 }
