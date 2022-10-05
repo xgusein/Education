@@ -3,7 +3,7 @@ import { Container, Row , Col ,Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Works.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendar,faFacebook, faTwitter,faGithub,faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import {faGithub} from '@fortawesome/free-brands-svg-icons';
 import IMG1 from '../../Components/assets/IMG1.jpg';
 import IMG2 from '../../Components/assets/Image-2.png';
 import IMG3 from '../../Components/assets/Screenshot_2.png';
@@ -12,7 +12,7 @@ import IMG3 from '../../Components/assets/Screenshot_2.png';
 const Works = () => {
     return (
         <section id='portfolio'>
-            <h5 className='work_head'>My Recent Work</h5>
+            <h5 className='work_head'>My Recent Work <br></br> <hr className='hedding_line' /></h5>
             <h2>Portfolio</h2>
 
             {/* <div className="container portfolio__container">
@@ -162,11 +162,11 @@ const Works = () => {
                             <img src={IMG3} alt="" />
                         </div>
                         <div className="caption">
-                            <h4>This is a portfolio item title
+                            <h4>ArcheryAZ website
                             <a href="https://github.com/xgusein"><FontAwesomeIcon icon ={faGithub} /></a></h4>
                         </div>
                     </div>
-                    <div className="gallery">
+                    {/* <div className="gallery">
                         <div className="image-section">
                             <img src={IMG1} alt="" />
                         </div>
@@ -192,10 +192,9 @@ const Works = () => {
                             <h4>This is a portfolio item title
                             <a href="https://github.com/xgusein"><FontAwesomeIcon icon ={faGithub} /></a></h4>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </Container>
-            
         </section>
     )
 }

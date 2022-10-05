@@ -3,7 +3,7 @@ import aboutimg from './About_img/photo_2022-08-08_22-29-40.jpg';
 import { Container, Row , Col ,Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {BsFillTelephoneFill,BsCalendarWeek} from 'react-icons/bs'
+import {BsFillTelephoneFill,BsCalendarWeek} from 'react-icons/bs';
 import {MdEmail} from 'react-icons/md';
 import {RiEarthFill} from 'react-icons/ri';
 import { useState } from 'react';
