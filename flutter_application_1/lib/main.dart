@@ -7,21 +7,52 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Ilkel Blok Uygulamasi",
-      home: AnaEkran(),
+      home: Iskele(),
     );
   }
 }
 
-class AnaEkran extends StatelessWidget {
+class Iskele extends StatelessWidget {
+  const Iskele({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Bos Uygulamasi")),
-      body: Container(
-        child: Center(
-          child: Text("Merhaba"),
-        ),
-      ),
+      body: AnaEkran(),
+    );
+  }
+}
+
+class AnaEkran extends StatefulWidget {
+  const AnaEkran({super.key});
+
+  @override
+  State<AnaEkran> createState() => _AnaEkranState();
+}
+
+class _AnaEkranState extends State<AnaEkran> {
+  String blogYazisi = 'Welcome Blog';
+  martGoster() {
+    setState(() {
+      blogYazisi = "Martfjidakk";
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Center(
+          child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text(blogYazisi),
+          ElevatedButton(
+            onPressed: martGoster,
+            child: Text('Mart Yazisi'),
+          )
+        ],
+      )),
     );
   }
 }
