@@ -57,11 +57,15 @@ class _AnaEkranState extends State<AnaEkran> {
   Widget build(BuildContext context) {
     return Container(
       child: Column(children: [
-        Flexible(child: ListView.builder(
-          itemCount: alisverisListesi.length,
-          itemBuilder: (context, indeksNumarasi) => ListTile(
-            subtitle: Text("Alisveris Listesi"),
-            title: Text(alisverisListesi[indeksNumarasi]),),),),
+        Flexible(
+          child: ListView.builder(
+            itemCount: alisverisListesi.length,
+            itemBuilder: (context, indeksNumarasi) => ListTile(
+              subtitle: Text("Alisveris Listesi"),
+              title: Text(alisverisListesi[indeksNumarasi]),
+            ),
+          ),
+        ),
         TextField(
           controller: t1,
         ),
