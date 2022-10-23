@@ -1,6 +1,14 @@
 import 'package:flutter/material.dart';
+// import 'package:firebase_core/firebase_core.dart';
+// import 'package:cloud_firestore/cloud_firestore.dart';
 
-void main() => runApp(MyApp());
+// void main() => runApp(MyApp());
+
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -32,8 +40,12 @@ class _IskeleState extends State<Iskele> {
         child: Center(
           child: Column(
             children: [
-              TextField(controller: t1,),
-              TextField(controller: t2,),
+              TextField(
+                controller: t1,
+              ),
+              TextField(
+                controller: t2,
+              ),
               Row(
                 children: [
                   ElevatedButton(onPressed: onPressed, child: child),
