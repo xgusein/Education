@@ -36,7 +36,22 @@ class _IskeleState extends State<Iskele> {
     FirebaseFirestore.instance
         .collection("Yazilar")
         .doc(t1.text)
-        .set({'baslik': t1.text, 'icerik': t2.text}).whenComplete(() => print("Yazi eklendi"));
+        .update({'baslik': t1.text, 'icerik': t2.text}).whenComplete(
+            () => print("Yazi eklendi"));
+  }
+
+  yaziGuncelle() {
+    FirebaseFirestore.instance
+        .collection("Yazilar")
+        .doc(t1.text)
+        .set({'baslik': t1.text, 'icerik': t2.text}).whenComplete(
+            () => print("Yazi guncellendi"));
+  }
+
+  yaziSil() {
+    FirebaseFirestore.instance
+        .collection("Yazilar")
+        .doc(t1.text).delete();
   }
 
   @override
@@ -56,9 +71,9 @@ class _IskeleState extends State<Iskele> {
               Row(
                 children: [
                   ElevatedButton(onPressed: yaziEkle, child: Text("Ekle")),
-                  ElevatedButton(onPressed: onPressed, child: child),
-                  ElevatedButton(onPressed: onPressed, child: child),
-                  ElevatedButton(onPressed: onPressed, child: child),
+                  ElevatedButton(onPressed: yaziGuncelle, child: Text("Guncelle")),
+                  ElevatedButton(onPressed: , child: child),
+                  ElevatedButton(onPressed: yaziSil, child: Text("Sil")),
                 ],
               )
             ],
