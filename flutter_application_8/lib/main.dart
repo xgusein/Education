@@ -32,6 +32,13 @@ class _IskeleState extends State<Iskele> {
   TextEditingController t1 = TextEditingController();
   TextEditingController t2 = TextEditingController();
 
+  yaziEkle() {
+    FirebaseFirestore.instance
+        .collection("Yazilar")
+        .doc(t1.text)
+        .set({'baslik': t1.text, 'icerik': t2.text}).whenComplete(() => print("Yazi eklendi"));
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,7 +55,7 @@ class _IskeleState extends State<Iskele> {
               ),
               Row(
                 children: [
-                  ElevatedButton(onPressed: onPressed, child: child),
+                  ElevatedButton(onPressed: yaziEkle, child: Text("Ekle")),
                   ElevatedButton(onPressed: onPressed, child: child),
                   ElevatedButton(onPressed: onPressed, child: child),
                   ElevatedButton(onPressed: onPressed, child: child),
