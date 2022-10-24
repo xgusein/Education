@@ -32,6 +32,9 @@ class _IskeleState extends State<Iskele> {
   TextEditingController t1 = TextEditingController();
   TextEditingController t2 = TextEditingController();
 
+  var gelenYaziBasligi = "";
+  var gelenYaziIcerigi = "";
+
   yaziEkle() {
     FirebaseFirestore.instance
         .collection("Yazilar")
@@ -49,9 +52,20 @@ class _IskeleState extends State<Iskele> {
   }
 
   yaziSil() {
+    FirebaseFirestore.instance.collection("Yazilar").doc(t1.text).delete();
+  }
+
+  yaziGetir() {
     FirebaseFirestore.instance
         .collection("Yazilar")
-        .doc(t1.text).delete();
+        .doc(t1.text)
+        .get()
+        .then((gelenVeri) {
+      setState(() {
+        gelenYaziBasligi = gelenVeri.data()['baslik'];
+        gelenYaziIcerigi = gelenVeri.data()['icerik'];
+      });
+    });
   }
 
   @override
@@ -71,10 +85,15 @@ class _IskeleState extends State<Iskele> {
               Row(
                 children: [
                   ElevatedButton(onPressed: yaziEkle, child: Text("Ekle")),
-                  ElevatedButton(onPressed: yaziGuncelle, child: Text("Guncelle")),
-                  ElevatedButton(onPressed: , child: child),
+                  ElevatedButton(
+                      onPressed: yaziGuncelle, child: Text("Guncelle")),
+                  ElevatedButton(onPressed: yaziGetir, child: Text("Getir")),
                   ElevatedButton(onPressed: yaziSil, child: Text("Sil")),
                 ],
+              ),
+              ListTile(
+                title: Text(gelenYaziBasligi),
+                subtitle: Text(gelenYaziIcerigi),
               )
             ],
           ),
