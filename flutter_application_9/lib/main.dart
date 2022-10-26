@@ -46,12 +46,10 @@ class _IskeleState extends State<Iskele> {
     FirebaseAuth.instance
         .signInWithEmailAndPassword(email: t1.text, password: t2.text)
         .then(() {
-      Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (context) => ProfilEkrani(),
-        ),
-      );
+      Navigator.pushAndRemoveUntil(
+          context,
+          MaterialPageRoute(builder: (_) => ProfilEkrani()),
+          (Route<dynamic> route) => false);
     });
   }
 

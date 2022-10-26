@@ -36,7 +36,7 @@ class AnaEkran extends StatefulWidget {
 }
 
 class _AnaEkranState extends State<AnaEkran> {
-  num sayi1, sayi2, sonuc;
+  num sayi1=0, sayi2=0, sonuc=0;
 
   TextEditingController t1 = TextEditingController();
   TextEditingController t2 = TextEditingController();
