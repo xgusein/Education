@@ -3,7 +3,7 @@
     padding: 0;
 }
 .box {
-    background: linear-gradient(60deg,#2414DB ,#AC6EFF);
+    background: linear-gradient(60deg,#AC6EFF ,#2414DB 140%);
     width: 100%;
     display: flex;
 
@@ -19,16 +19,41 @@
 }
 
 .heading {
-    font-family: Poppins bold 43pt;
+    margin-top: 50px;
+    font-family: Poppins bold 57pt;
+    font-size: 30px;
     color: #2B2E39,;
 }
 
 h2{
     font-family: Poppins Extra Bold 85pt;
+    font-size: 60px;
     color: #2B2E39,;
+    margin-top: 130px;
 }
 
 .heading, h2 {
-    margin-top: 50px;
+    margin-left: 50px;
     padding-left: 5%;
+}
+
+.inputs {
+    display: absolute;
+    color: #8D9092;
+    height: 200px;
+    margin-top: 5rem;
+    margin-left: 100px;
+}
+
+span {
+    top:-24px;
+    left: 140px;
+    position: relative;
+    display: flex;
+    color: #8D9092;
+}
+
+.Alert_icon {
+    margin-top: 5px;
+    margin-left: 2rem;
 }
