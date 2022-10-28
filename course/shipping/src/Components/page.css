@@ -41,19 +41,44 @@ h2{
     display: absolute;
     color: #8D9092;
     height: 200px;
-    margin-top: 5rem;
-    margin-left: 100px;
+    /* margin-top: 5rem; */
+    /* margin-left: 10px; */
+    margin: 80px;
+}
+
+.inputs input,select {
+    border-color: #2414DB;
+    border-radius: 50px;
+    border: 1px solid;
+}
+
+input {
+    border-color: #2414DB;
+    padding: 5px;
+    margin-left: 30px;
 }
 
 span {
-    top:-24px;
-    left: 140px;
+    top:-0.1px;
+    margin-left: -135px;
     position: relative;
-    display: flex;
     color: #8D9092;
 }
 
 .Alert_icon {
-    margin-top: 5px;
-    margin-left: 2rem;
+    /* margin-left: 2.8rem; */
+    margin-left: 2.8rem;
+    /* height: 15px; */
+    font-size: 20px;
+    position: absolute;
+    top: 4px;
+}
+
+#Fabric {
+    padding: 5px;
+    border-color: #2414DB;
+    color: #8D9092;
+    font-family: Poppins Medium 27pt;
+    font-size: 15px;
+    margin-left: 100px;
 }

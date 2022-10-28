@@ -13,10 +13,10 @@ function Page() {
                 <input type="date" />
                 <input type="text" required="required"/>
                 <span>Quantity<IoIosAlert className="Alert_icon"/></span>
-                <select id="Fabric" name="Fabric">
-                  <option value="">Fabric Type</option>
-                  <option value="saab">Cotton</option>
-                  <option value="fiat">Linen</option>
+                <select id="Fabric">
+                  <option>Fabric Type</option>
+                  <option>Cotton</option>
+                  <option>Linen</option>
                 </select>
             </div>
             <button className="calculate">Calculate</button>
