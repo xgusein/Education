@@ -38,11 +38,15 @@ class _IskeleState extends State<Iskele> {
             ),
             ListTile(
               title: Text('Item1'),
-              onTap: () {},
+              onTap: () {
+                Navigator.pop(context);
+              },
             ),
             ListTile(
               title: Text('Item2'),
-              onTap: () {},
+              onTap: () {
+                Navigator.pop(context);
+              },
             )
           ],
         ),
